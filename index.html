@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City-State — trail simulation</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #bfd4e6; font-family: ui-sans-serif, system-ui, sans-serif; }
+      #app { position: fixed; inset: 0; }
+      #app canvas { display: block; }
+      #hud {
+        position: fixed; top: 12px; left: 12px; padding: 8px 12px;
+        background: rgba(20, 24, 28, 0.6); color: #f2ede4; border-radius: 6px;
+        font-size: 14px; letter-spacing: 0.02em; pointer-events: none; white-space: pre;
+      }
+      #hint {
+        position: fixed; bottom: 12px; left: 12px; padding: 6px 10px;
+        background: rgba(20, 24, 28, 0.45); color: #e4ddd0; border-radius: 6px; font-size: 12px; pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">Day 1</div>
+    <div id="hint">drag to orbit · right-drag to pan · scroll to zoom · space to pause</div>
+    <script type="module" src="/src/app/main.ts"></script>
+  </body>
+</html>
